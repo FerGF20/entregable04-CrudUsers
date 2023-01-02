@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    align-self: center;
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    gap: 5rem;
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-morado-rosa-nublado_91008-257.jpg?w=2000);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form_container{
+    position: fixed;
+    background-color: #0003;
+    backdrop-filter: blur(2px);
+    z-index: 2;
+    top: 0;
+    min-height: 100vh;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.disable-form{
+    display: none;
+}
+
+label{
+    font-style: italic;
+}
+
+input{
+    width: 100%;
+    outline: none;
+    height: 22px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ebedf3;
+}
+
+.card_container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    max-width: 300px;
+    border: solid #E5E5E5 2px;
+    background-color: white;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+span{
+    color: lightgray;
+    font-size: px;
+    
+}
+
+.btn_container{
+    display: flex;
+    align-self: flex-end;
+    gap: 0.3rem;
+}
+
+.add_btn{
+    width: 60%;
+    height: 30px;
+    align-self: center;
+    border-radius: 10px;
+    border-style: none;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(136, 219, 191);
+}
+
+.add_btn:hover, .new-user_btn:hover{
+    color: rgb(88, 168, 142);
+    background-color: white;
+    border: solid rgb(136, 219, 191);
+}
+
+.new-user_btn{
+    width: 80%;
+    height: 30px;
+    align-self: center;
+    border-radius: 10px;
+    border-style: none;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(136, 219, 191);
+}
+
+button, .bx{
+    cursor: pointer;
+}
+
+.btn_style{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.delete_btn{
+    background-color: rgb(212, 54, 54);
+}
+
+.edit_btn{
+    background-color: lightgray;
+}
+
+.bx-trash, .bx-edit{
+    font-size: 25px;
+}
+
+.bx-x-circle{
+    font-size: 35px;
+    align-self: center;
+}
+
+.vector{
+    width: auto;
+    height: 1px;
+    background-color: gray;
+}
+
+@media (min-width:540px) {
+    
+    article{
+        width: auto;
+        flex-wrap: wrap;
+        max-width: 300px;
+    }
+    
+}
